@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Who Am I?</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="description" content="Welcome to my reflection on the Internet." />
+  <meta property="og:site_name" content="Who Am I?" />
+  <meta property="og:title" content="Who Am I?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Welcome to my reflection on the Internet." />
+  <meta property="og:image" content="https://amitrathore.com/assets/images/card.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:url" content="https://amitrathore.com" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://amitrathore.com" />
+  <link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700" rel="stylesheet" />
+  <style>
+    :root {
+      --viewport-height: 100vh;
+      --background-height: 100vh;
+      --color-text: #1a1a1a;
+      --color-text-secondary: #4a4a4a;
+      --color-accent: #2563eb;
+      --color-bg: #ffffff;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--color-text);
+      background: var(--color-bg);
+      min-height: var(--viewport-height);
+      overflow-x: hidden;
+    }
+
+    /* Animated Background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22640%22%20height%3D%22480%22%20viewBox%3D%220%200%20640%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20preserveAspectRatio%3D%22none%22%3E%3Cstyle%3Ecircle%7Bfill%3Argba(0,0,0,0.06)%7D%3C%2Fstyle%3E%3Ccircle%20cx%3D%22331%22%20cy%3D%22303%22%20r%3D%2218%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%227s%22%20repeatCount%3D%22indefinite%22%20values%3D%22331%3B180%3B500%3B331%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%227s%22%20repeatCount%3D%22indefinite%22%20values%3D%22303%3B120%3B400%3B303%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%227s%22%20repeatCount%3D%22indefinite%22%20values%3D%2218%3B28%3B12%3B18%22%2F%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%2280%22%20r%3D%2222%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%229s%22%20repeatCount%3D%22indefinite%22%20values%3D%22120%3B520%3B300%3B120%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%229s%22%20repeatCount%3D%22indefinite%22%20values%3D%2280%3B380%3B200%3B80%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%229s%22%20repeatCount%3D%22indefinite%22%20values%3D%2222%3B32%3B16%3B22%22%2F%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%22520%22%20cy%3D%22180%22%20r%3D%2214%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%225s%22%20repeatCount%3D%22indefinite%22%20values%3D%22520%3B80%3B380%3B520%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%225s%22%20repeatCount%3D%22indefinite%22%20values%3D%22180%3B420%3B60%3B180%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%225s%22%20repeatCount%3D%22indefinite%22%20values%3D%2214%3B22%3B10%3B14%22%2F%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%22420%22%20r%3D%2226%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%2211s%22%20repeatCount%3D%22indefinite%22%20values%3D%2260%3B580%3B280%3B60%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%2211s%22%20repeatCount%3D%22indefinite%22%20values%3D%22420%3B80%3B320%3B420%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%2211s%22%20repeatCount%3D%22indefinite%22%20values%3D%2226%3B38%3B20%3B26%22%2F%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%22580%22%20cy%3D%22440%22%20r%3D%2210%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%226s%22%20repeatCount%3D%22indefinite%22%20values%3D%22580%3B40%3B420%3B580%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%226s%22%20repeatCount%3D%22indefinite%22%20values%3D%22440%3B180%3B360%3B440%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%226s%22%20repeatCount%3D%22indefinite%22%20values%3D%2210%3B18%3B8%3B10%22%2F%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%22280%22%20cy%3D%2240%22%20r%3D%2212%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%228s%22%20repeatCount%3D%22indefinite%22%20values%3D%22280%3B480%3B100%3B280%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%228s%22%20repeatCount%3D%22indefinite%22%20values%3D%2240%3B400%3B240%3B40%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%228s%22%20repeatCount%3D%22indefinite%22%20values%3D%2212%3B20%3B8%3B12%22%2F%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%22400%22%20cy%3D%22360%22%20r%3D%2220%22%3E%3Canimate%20attributeName%3D%22cx%22%20dur%3D%2210s%22%20repeatCount%3D%22indefinite%22%20values%3D%22400%3B160%3B560%3B400%22%2F%3E%3Canimate%20attributeName%3D%22cy%22%20dur%3D%2210s%22%20repeatCount%3D%22indefinite%22%20values%3D%22360%3B60%3B260%3B360%22%2F%3E%3Canimate%20attributeName%3D%22r%22%20dur%3D%2210s%22%20repeatCount%3D%22indefinite%22%20values%3D%2220%3B30%3B14%3B20%22%2F%3E%3C%2Fcircle%3E%3C%2Fsvg%3E');
+      background-size: cover;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Section Styles */
+    section {
+      display: none;
+      min-height: 100vh;
+    }
+    section.active { display: block; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 24px;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--color-text);
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      margin-top: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    .featured-link {
+      display: block;
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--color-accent);
+    }
+    .featured-link:hover { text-decoration: underline; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1.5rem;
+      padding: 14px 28px;
+      background: #FFD700;
+      color: #1a1a1a;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #e6c200;
+      transform: translateY(-1px);
+    }
+    .btn svg { width: 18px; height: 18px; }
+
+    /* Icons */
+    .icons {
+      display: flex;
+      gap: 12px;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.04);
+      color: var(--color-text);
+      transition: all 0.2s ease;
+    }
+    .icons a:hover {
+      background: var(--color-text);
+      color: #fff;
+    }
+    .icons svg { width: 20px; height: 20px; }
+
+    /* Profile Image */
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 2.5rem;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      height: 1px;
+      background: rgba(0,0,0,0.08);
+      margin: 3rem 0;
+    }
+
+    /* Content Sections */
+    .section-block {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-block p {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .section-block p + p {
+      margin-top: 0.5rem;
+    }
+
+    .section-block a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+    .section-block a:hover { text-decoration: underline; }
+
+    /* Life keywords */
+    .keywords {
+      color: var(--color-text-secondary);
+      font-size: 0.9rem;
+      line-height: 2;
+    }
+    .keywords span {
+      display: inline;
+    }
+
+    /* Bio section */
+    .bio-hero {
+      text-align: center;
+      padding: 80px 24px 40px;
+    }
+    .bio-hero .profile-img {
+      width: 180px;
+      height: 180px;
+    }
+
+    /* Year entries */
+    .year-entry {
+      margin-bottom: 1rem;
+    }
+
+    /* Chat section */
+    .chat-section {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .chat-hero {
+      text-align: center;
+      padding: 60px 24px 30px;
+    }
+    .chat-frame {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 0 24px 40px;
+    }
+    .chat-frame iframe {
+      width: 100%;
+      max-width: 700px;
+      min-height: 550px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+    }
+    footer a { color: var(--color-text); }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--color-text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .back-link:hover { color: var(--color-accent); }
+    .back-link svg { width: 16px; height: 16px; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero { padding: 40px 20px; }
+      .profile-img { width: 130px; height: 130px; }
+      .icons a { width: 38px; height: 38px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HOME SECTION -->
+  <section id="home-section" class="active">
+    <div class="hero">
+      <h1><strong>Amit Rathore</strong></h1>
+      <p class="subtitle">Seer, Engineer, Creator, Entrepreneur</p>
+      <a href="https://intergraph.ai" class="featured-link">A sneak peek at Intergraph Games</a>
+
+      <a href="#amitgpt" class="btn">
+        <svg viewBox="0 0 40 40" fill="currentColor"><path d="M33.1,7.2H7.6c-3.1,0-4.6,1.3-4.6,3.9v15.5c0,3.1,1.5,4.6,4.6,4.6h4.4v5.4c0,.8,0,1.4.4,1.9.3.2.6.3.8.3.4,0,.7-.2,1-.7l5.4-7h12.6c3.1,0,4.6-1.5,4.6-4.6v-15.5c0-2.6-1.3-3.9-3.9-3.9h0Z"/></svg>
+        Chat with AmitGPT
+      </a>
+
+      <div class="icons">
+        <a href="https://linkedin.com/in/amitrathore" title="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 40 40" fill="currentColor"><path d="M12.1,13.8v19.1H5.7V13.8C5.7,13.8,12.1,13.8,12.1,13.8z M12.5,7.9c0,0.9-0.3,1.7-1,2.4c-0.7,0.6-1.5,0.9-2.6,0.9h0c-1.1,0-1.9-0.3-2.5-0.9c-0.6-0.6-1-1.4-1-2.4c0-1,0.3-1.7,1-2.4S7.9,4.6,9,4.6s1.9,0.3,2.6,0.9S12.5,6.9,12.5,7.9z M35,22v11h-6.4V22.7c0-1.4-0.3-2.4-0.8-3.2c-0.5-0.8-1.3-1.1-2.4-1.1c-0.8,0-1.5,0.2-2,0.7c-0.5,0.4-1,1-1.2,1.7c-0.1,0.4-0.2,0.9-0.2,1.6v10.7h-6.4c0-5.1,0-9.3,0-12.5s0-5.1,0-5.7l0-0.9H22v2.8h0c0.3-0.4,0.5-0.8,0.8-1.1c0.3-0.3,0.6-0.6,1.1-1c0.5-0.4,1-0.6,1.7-0.8c0.7-0.2,1.4-0.3,2.2-0.3c2.2,0,4,0.7,5.3,2.2C34.4,17,35,19.1,35,22L35,22z"/></svg>
+        </a>
+        <a href="https://twitter.com/amitrathore" title="X" target="_blank" rel="noopener">
+          <svg viewBox="0 0 40 40" fill="currentColor"><path d="M36,36l-12.4-18.3,11.6-13.7h-4l-9.4,11-7.5-11H4.2l12,17.7-12.2,14.3h4l9.9-11.7,7.9,11.7h10.2,0ZM13,6.6l18.2,26.9h-4L9,6.6h4Z"/></svg>
+        </a>
+        <a href="#bio" title="CV">
+          <svg viewBox="0 0 40 40" fill="currentColor"><path d="M32.4,34.7c-0.3,0.3-0.7,0.5-1.1,0.5H9.1c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.4C7.5,6,7.7,5.6,8,5.3C8.3,5,8.7,4.8,9.1,4.8h13.3l-0.1,9.3c0,0.4,0.2,0.8,0.5,1.1c0.3,0.3,0.7,0.5,1.1,0.5h9v17.9C32.9,34,32.7,34.4,32.4,34.7z M14.4,23.5c0.3-0.5,0.8-0.8,1.4-0.8c0.3,0,0.5,0.1,0.7,0.2c0.2,0.1,0.4,0.3,0.6,0.5c0.1,0.1,0.2,0.3,0.3,0.6l2.4-0.6c-0.3-1-0.8-1.7-1.4-2.1c-0.6-0.5-1.5-0.7-2.6-0.7c-1.4,0-2.5,0.4-3.2,1.2c-0.8,0.8-1.1,2-1.1,3.5c0,1.1,0.2,2.1,0.7,2.8c0.4,0.7,1,1.2,1.5,1.5c0.6,0.3,1.4,0.4,2.3,0.4c0.8,0,1.4-0.1,1.9-0.4c0.5-0.2,0.9-0.6,1.3-1.1c0.3-0.5,0.6-1,0.7-1.7l-2.4-0.7c-0.1,0.6-0.3,1-0.6,1.3c-0.3,0.3-0.7,0.5-1.2,0.5c-0.5,0-0.9-0.2-1.2-0.6C14.2,27,14,26.4,14,25.3C14,24.5,14.2,23.9,14.4,23.5z M26.9,20.8L25,27.4l-2-6.6h-2.8l3.3,9.1h2.9l3.2-9.1H26.9z M24.5,5.5c0.2,0.2,0.4,0.3,0.6,0.5l6.8,6.9c0.2,0.2,0.3,0.4,0.5,0.6l-7.9-0.1V5.5z"/></svg>
+        </a>
+        <a href="mailto:amit@awake.vc" title="Email">
+          <svg viewBox="0 0 40 40" fill="currentColor"><path d="M37.5,12.6l-17.5,11.9L2.5,12.6c-.2-.1-.3-.2-.5-.2v-2.7c0-.8.6-1.4,1.4-1.4h33.1c.8,0,1.4.6,1.4,1.4v2.7c-.2,0-.4,0-.5.2ZM19.5,26.3c.2.1.3.2.5.2s.4,0,.5-.2l17.5-11.9v16.9c0,.8-.6,1.4-1.4,1.4H3.4c-.8,0-1.4-.6-1.4-1.4V14.4l17.5,11.9Z"/></svg>
+        </a>
+        <a href="https://awake.ventures/@amit" title="Globe" target="_blank" rel="noopener">
+          <svg viewBox="0 0 40 40" fill="currentColor"><path d="M20,3C10.6,3,3,10.6,3,20s7.6,17,17,17s17-7.6,17-17S29.4,3,20,3z M34.8,18.9h-6.2c-0.1-2.2-0.3-4.2-0.8-6.1c1.5-0.4,3-0.9,4.2-1.5c0.6,0.9,1.2,1.8,1.6,2.9C34.3,15.7,34.7,17.3,34.8,18.9z M25.7,26.7c-1.5-0.3-3.1-0.4-4.6-0.5v-5.1h5.4c-0.1,1.8-0.3,3.5-0.6,5.1C25.8,26.3,25.8,26.5,25.7,26.7z M14.2,26.2c-0.3-1.6-0.6-3.3-0.6-5.1h5.4v5.1c-1.6,0-3.2,0.2-4.6,0.5C14.2,26.5,14.2,26.3,14.2,26.2z M14.3,13.3c1.5,0.3,3.1,0.4,4.6,0.5v5.1h-5.4c0.1-1.8,0.3-3.5,0.6-5.1C14.2,13.7,14.2,13.5,14.3,13.3z M21.1,5.4C21.4,5.6,21.7,5.7,22,6c0.8,0.7,1.6,1.7,2.2,3c0.4,0.7,0.7,1.5,0.9,2.3c-1.3,0.2-2.7,0.4-4,0.4V5.4z M18,6c0.3-0.3,0.6-0.4,0.9-0.6v6.2c-1.4,0-2.8-0.2-4-0.4c0.3-0.8,0.6-1.6,0.9-2.3C16.5,7.7,17.2,6.7,18,6z M18.9,28.4v6.2c-0.3-0.1-0.6-0.3-0.9-0.6c-0.8-0.7-1.6-1.7-2.2-3c-0.4-0.7-0.7-1.5-0.9-2.3C16.2,28.6,17.5,28.4,18.9,28.4z M22,34c-0.3,0.3-0.6,0.4-0.9,0.6v-6.2c1.4,0,2.8,0.2,4,0.4c-0.3,0.8-0.6,1.6-0.9,2.3C23.5,32.3,22.8,33.3,22,34z M21.1,18.9v-5.1c1.6,0,3.2-0.2,4.6-0.5c0,0.2,0.1,0.4,0.1,0.5c0.3,1.6,0.6,3.3,0.6,5.1H21.1z M30.5,9.5c0,0,0.1,0.1,0.1,0.1c-1,0.4-2.2,0.8-3.4,1.1c-0.6-1.9-1.4-3.5-2.4-4.8c0.3,0.1,0.6,0.2,0.9,0.3C27.5,7.1,29.1,8.1,30.5,9.5z M14.2,6.3c0.3-0.1,0.6-0.2,0.9-0.3c-0.9,1.3-1.7,2.9-2.4,4.8c-1.2-0.3-2.3-0.7-3.4-1.1c0,0,0.1-0.1,0.1-0.1C10.9,8.1,12.5,7.1,14.2,6.3z M7.9,11.4c1.3,0.6,2.7,1.1,4.2,1.5c-0.4,1.9-0.7,3.9-0.8,6.1H5.2c0.1-1.6,0.5-3.2,1.1-4.7C6.8,13.2,7.3,12.3,7.9,11.4z M5.2,21.1h6.2c0.1,2.2,0.3,4.2,0.8,6.1c-1.5,0.4-3,0.9-4.2,1.5c-0.6-0.9-1.2-1.8-1.6-2.9C5.7,24.3,5.3,22.7,5.2,21.1z M9.5,30.5c0,0-0.1-0.1-0.1-0.1c1-0.4,2.2-0.8,3.4-1.1c0.6,1.9,1.4,3.5,2.4,4.8c-0.3-0.1-0.6-0.2-0.9-0.3C12.5,32.9,10.9,31.9,9.5,30.5z M25.8,33.7c-0.3,0.1-0.6,0.2-0.9,0.3c0.9-1.3,1.7-2.9,2.4-4.8c1.2,0.3,2.3,0.7,3.4,1.1c0,0-0.1,0.1-0.1,0.1C29.1,31.9,27.5,32.9,25.8,33.7z M32.1,28.6c-1.3-0.6-2.7-1.1-4.2-1.5c0.4-1.9,0.7-3.9,0.8-6.1h6.2c-0.1,1.6-0.5,3.2-1.1,4.7C33.2,26.8,32.7,27.7,32.1,28.6z"/></svg>
+        </a>
+        <a href="#amitgpt" title="Message">
+          <svg viewBox="0 0 40 40" fill="currentColor"><path d="M33.1,7.2H7.6c-3.1,0-4.6,1.3-4.6,3.9v15.5c0,3.1,1.5,4.6,4.6,4.6h4.4v5.4c0,.8,0,1.4.4,1.9.3.2.6.3.8.3.4,0,.7-.2,1-.7l5.4-7h12.6c3.1,0,4.6-1.5,4.6-4.6v-15.5c0-2.6-1.3-3.9-3.9-3.9h0Z"/></svg>
+        </a>
+      </div>
+
+      <img src="assets/images/image02.jpg" alt="Amit Rathore" class="profile-img" />
+    </div>
+
+    <div class="container">
+      <hr />
+
+      <!-- Effective Humanism -->
+      <div class="section-block">
+        <h2>Effective Humanism</h2>
+        <p>Beyond Effective Altruism and beyond Effective Acceleration, blending both with Awake Internet Protocols, welcome to a simpler path.</p>
+        <p><a href="https://EffectiveHumanism.org">Effective Humanism</a></p>
+      </div>
+
+      <hr />
+
+      <!-- AwakeVC -->
+      <div class="section-block">
+        <h2>AwakeVC</h2>
+        <p>Awakened Value Co-creation, a family office structured as a private equity collective.</p>
+        <p><a href="https://awake.ventures">Awake Ventures</a> | <a href="https://awake.vc">AwakeVC</a> | <a href="https://awake.to/Reader">Awake Reader</a></p>
+        <p><a href="https://awake.business/#business" class="btn" style="margin-top:1rem;padding:10px 20px;font-size:0.85rem;">
+          <svg viewBox="0 0 40 40" fill="currentColor" style="width:16px;height:16px;"><path d="M8.4,33.5c0,0.9,1.4,1.8,2.2,1.8s1.7-0.2,2.2-0.7l22-12.8c0.5-0.5,0.7-1.1,0.7-1.8c0-0.7-0.2-1.3-0.7-1.8l-22-12.8c-0.5-0.5-1.3-0.7-2.2-0.7S8.5,5.6,8.4,6.5V33.5z"/></svg>
+          Launch an Awake Business
+        </a></p>
+      </div>
+
+      <hr />
+
+      <!-- iRealization -->
+      <div class="section-block">
+        <h2>iRealization</h2>
+        <p>All there is, is Consciousness.</p>
+        <p>More at <a href="https://irealization.com">iRealization</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Awake Ink -->
+      <div class="section-block">
+        <h2>Awake Ink</h2>
+        <p>Business, work-in-progress:<br />
+        <a href="https://SwarmInfluence.com">Swarm Influence</a> | <a href="https://BeyondAllClouds.com">Beyond All Clouds</a></p>
+        <p>Technology:<br />
+        <a href="https://www.amazon.com/Clojure-Action-Amit-Rathore/dp/1617291528">Clojure in Action</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Future of Work -->
+      <div class="section-block">
+        <h2>Future of Work</h2>
+        <p>For High-Capacity Humans:<br />
+        <a href="https://TheFractals.co">The Fractals</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Growth Orchestration -->
+      <div class="section-block">
+        <h2>Growth Orchestration</h2>
+        <p>For Entrepreneurs and Leaders:<br />
+        <a href="https://coselling.ai">Coselling</a></p>
+        <p>For Enterprise and SMEs:<br />
+        <a href="https://Selltype.com">Selltype</a> | <a href="https://orgtype.com">Orgtype</a></p>
+        <p>For Markets:<br />
+        <a href="https://daemons.ai">Daemons</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Artificial Intelligence -->
+      <div class="section-block">
+        <h2>Artificial Intelligence</h2>
+        <p>AGI through Artificial Consciousness:<br />
+        <a href="https://intergraph.ai">Intergraph</a> | <a href="https://iConsciousness.com">iConsciousness</a> | Opentangle Stay tuned.</p>
+      </div>
+
+      <hr />
+
+      <!-- Shoptype -->
+      <div class="section-block">
+        <h2>Shoptype</h2>
+        <p>Community Commerce, where everyone wins.</p>
+        <p><a href="https://shoptype.com">Shoptype Platform</a> | <a href="https://shoptype.capital">Shoptype Capital</a> | <a href="https://shoptype.chat">Shoptype Chat</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Avatars International -->
+      <div class="section-block">
+        <h2>Avatars International</h2>
+        <p>AI-powered Agency for AI-powered Avatars</p>
+        <p><a href="https://Avatars.International">Avatars International</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Shopherd -->
+      <div class="section-block">
+        <h2>Shopherd</h2>
+        <p>Network Retail for the Multiverse.</p>
+        <p><a href="https://shopherd.com">Shopherd</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Awake Money -->
+      <div class="section-block">
+        <h2>Awake Money</h2>
+        <p>A social wallet for social money.</p>
+        <p><a href="https://awake.money">Awake Money</a></p>
+      </div>
+
+      <hr />
+
+      <!-- DAOtype -->
+      <div class="section-block">
+        <h2>DAOtype</h2>
+        <p>DAO operations and monetization.</p>
+        <p><a href="https://daotype.com">DAOtype</a></p>
+      </div>
+
+      <hr />
+
+      <!-- MarketplaceOS -->
+      <div class="section-block">
+        <h2>MarketplaceOS</h2>
+        <p>Web2.5! Or Recursive Decentralization.</p>
+        <p><a href="https://MarketplaceOS.com">MarketplaceOS</a></p>
+      </div>
+
+      <hr />
+
+      <!-- Life -->
+      <div class="section-block">
+        <h2>Life</h2>
+        <p>A series of coincidences (coming soon):</p>
+        <p class="keywords">
+          <span>Awakening</span> | <span>iRealization</span> | <span>Guruji</span> | <span>Art</span> | <span>Meditation</span> | <span>Protocols</span> | <span>Prague</span> | <span>PressCoin</span> | <span>Mind</span> | <span>Stories</span> | <span>Burning Man</span> | <span>Types</span> | <span>Speakright</span> | <span>Quintype</span> | <span>Interactive</span> | <span>Angels</span> | <span>Disruption</span> | <span>Abstraction</span> | <span>Staples</span> | <span>Innovation</span> | <span>Intelligence</span> | <span>Arjun</span> | <span>Zolodeck</span> | <span>Adi</span> | <span>Cognifly</span> | <span>Wisdomize</span> | <span>Mixed Fruit Jam</span> | <span>Curry Logic</span> | <span>Runa</span> | <span>Clojure</span> | <span>Higher Order</span> | <span>Google</span> | <span>San Mateo</span> | <span>Yewoh</span> | <span>Grokkr</span> | <span>S-Expressions</span> | <span>Finexion</span> | <span>Epistemologic</span> | <span>SentientWorks</span> | <span>Chicago</span> | <span>LISP</span> | <span>ThoughtWorks</span> | <span>Knowledge</span> | <span>Writing</span> | <span>IBM</span> | <span>Lightfoot Networks</span> | <span>Office Anywhere</span> | <span>inCASE</span> | <span>Magic</span> | <span>PESIT</span> | <span>Internet</span> | <span>Class</span> | <span>Ideas</span> | <span>Networks</span> | <span>Alice</span> | <span>Words</span> | <span>Logo</span> | <span>NPS</span> | <span>Imagination</span> | <span>Games</span> | <span>Computer</span> | <span>Reading</span> | <span>Lego</span> | <span>Bangalore</span> | <span>India</span>
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      <a href="#home">Home</a> | <a href="#amitgpt">Chat with AmitGPT</a><br /><br />
+      &copy; <a href="https://awake.vc">AwakeVC</a> | Awakened Value Co-creation<br />
+      <a href="mailto:amit@awake.vc">amit@awake.vc</a>
+    </footer>
+  </section>
+
+  <!-- BIO SECTION -->
+  <section id="bio-section">
+    <div class="bio-hero">
+      <a href="#home" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Home
+      </a>
+      <h1><strong>Amit Rathore</strong></h1>
+      <p class="subtitle">Career Highlights</p>
+      <img src="assets/images/image01.jpg" alt="Amit Rathore" class="profile-img" />
+    </div>
+
+    <div class="container">
+      <hr />
+
+      <!-- After Awake -->
+      <div class="section-block">
+        <h2>After Awake</h2>
+        <p>Connecting all dots, unleashing parallel entrepreneurship, designing for self-actualization:</p>
+        <p>2026, Intergraph: designing the core Multiplayer Knowledge Graph and the Mind of Agents Protocol, to bring Artificial Consciousness to the app layer.</p>
+        <p>2025, Coselling.ai: Selltype was absorbed by Coselling.</p>
+        <p>2025, Selltype: Real-time tracking, execution, and optimization engine for distributed revenue teams. Selltype is the unified operating system for human and AI agents working across marketing and sales orgs.</p>
+        <p>2020, Shoptype: commercialization of the Coseller Protocol, solving the <a href="https://awake.to/attribution-problem">retail attribution problem</a>, and inventing a new type of B2C Business Model called Community Commerce for transparent consumer retail.</p>
+        <p>2019, AwakeVC: designed my family office as Awakened Value Co-creation, a protocols-powered private-equity collective, managed by a proprietary Venture Ecosystem Operating System called a64z. Also designed the <a href="https://awake.to/NACs">NAC</a> for AI-powered FinTech-driven <a href="https://www.blitzscaling.com">blitzscaling</a> to apply <a href="https://awake.to/notes-programmatic-MnA">programmatic M&amp;A</a> growth strategies</p>
+      </div>
+
+      <hr />
+
+      <!-- Publications -->
+      <div class="section-block">
+        <h2>Publications</h2>
+        <p>Learnings over the years:</p>
+        <p>2025 <a href="https://SwarmInfluence.com">Swarm Influence</a> - The Emergent Science of Collective Action: Harnessing AI, Avatars, and the Global Brain</p>
+        <p>2022, <a href="https://BeyondAllClouds.com">Beyond All Clouds:</a> live-blogging version of a book being written, the Story of Awake, of going from zero to one, and transforming industries</p>
+        <p>2018, <a href="https://www.amazon.com/Clojure-programming-practice-original-Chinese/dp/7111609387">Clojure in Action, in Chinese:</a> translated to Chinese for the mainland China launch of the book</p>
+        <p>2015, <a href="https://www.amazon.com/Clojure-Action-Amit-Rathore-ebook/dp/B09781HSH8">Clojure in Action, 2nd Edition:</a> updated and revised, along with a new co-author, Francis Avila</p>
+        <p>2011, <a href="https://www.amazon.com/Clojure-Action-Elegant-Applications-JVM/dp/1935182595">Clojure in Action:</a> among the earliest books on <a href="https://clojure.org">Clojure</a>, based on the first large-scale production system built in the extremely high-level programming language</p>
+      </div>
+
+      <!-- Before Awake -->
+      <div class="section-block">
+        <h2>Before Awake</h2>
+        <p>In the space between dots, engaged in serial entrepreneurship, heading towards self-realization:</p>
+        <p>2017, PressCoin: a blockchain-powered Web3 multiverse for a new news-media ecosystem</p>
+        <p>2014, Quintype: a B2B software-as-a-service for all things digital media from content management, distribution, engagement, and monetization</p>
+        <p>2013, Staples: VP of Global e-Commerce, post acquisition of Runa, helping grow $30B revenue across online and offline, and B2B and B2C channels</p>
+        <p>2011, Higher Order: Machine-Learning and Artificial Intelligence Lab, incubating new ideas and ventures</p>
+        <p>2008, Runa: Revenue Ultimately Needs Algorithms, right? A large-scale ensemble AI system designed to increase e-commerce conversion rates by optimizing personalized pricing, automated merchandizing, package delivery estimation, cross-selling, upselling, and more.</p>
+        <p>2002, ThoughtWorks: traveled around the US for clients across trading systems, financial and banking systems, and a variety of other large-scale, mission-critical enterprise systems</p>
+        <p>2001, IBM: telecom management systems</p>
+        <p>1999, Philips Semiconductors: building simulators for new VLSI System-on-Chip designs</p>
+      </div>
+
+      <hr />
+
+      <!-- Patents -->
+      <div class="section-block">
+        <h2>Patents</h2>
+        <p>Innovations over the years:</p>
+        <p>2024: <a href="https://awake.to/authentic-media-patent">Identifying Provenence of Authentic Media</a></p>
+        <p>2021: <a href="https://patents.google.com/patent/WO2021248144A1/">Enabling influencer-driven commerce that tracks and attributes multiple influencer contributions and distributes available fees</a></p>
+        <p>2015: <a href="https://patents.google.com/patent/US20150032507A1">Automated targeting of information to an application visitor based on merchant business rules and analytics of benefits gained from automated targeting of information to the application visitor</a></p>
+        <p>2014: <a href="https://patents.google.com/patent/US20150066644A1">Automated targeting of information to an application user based on retargeting and utilizing email marketing</a></p>
+        <p>2014: <a href="https://patents.google.com/patent/US20150032532A1">Automated targeting of information influenced by geo-location to an application user using a mobile device</a></p>
+        <p>2014: <a href="https://patents.google.com/patent/US20150032540A1">Automated targeting of information influenced by delivery to a user</a></p>
+        <p>2010: <a href="https://patents.google.com/patent/US20110029382A1">Automated Targeting of Information to a Website Visitor</a></p>
+      </div>
+
+      <p style="text-align:center;margin-top:2rem;">
+        <a href="#home" class="btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Home
+        </a>
+      </p>
+
+    </div>
+
+    <footer>
+      <a href="#home">Home</a> | <a href="#amitgpt">Chat with AmitGPT</a><br /><br />
+      &copy; <a href="https://awake.vc">AwakeVC</a> | Awakened Value Co-creation<br />
+      <a href="mailto:amit@awake.vc">amit@awake.vc</a>
+    </footer>
+  </section>
+
+  <!-- AMITGPT SECTION -->
+  <section id="amitgpt-section" class="chat-section">
+    <div class="chat-hero">
+      <a href="#home" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Home
+      </a>
+      <h1><strong>Amit Rathore</strong></h1>
+      <p class="subtitle">Virtually 24/7</p>
+    </div>
+
+    <div class="chat-frame">
+      <iframe
+        src="https://delphi.ai/embeddable/config/bd4c0807-76ca-4b68-8fb5-f30d5db88470"
+        allow="camera *; microphone *"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <div style="text-align:center;padding:20px;">
+      <a href="#amitgpt" class="btn">
+        <svg viewBox="0 0 40 40" fill="currentColor"><path d="M33.1,7.2H7.6c-3.1,0-4.6,1.3-4.6,3.9v15.5c0,3.1,1.5,4.6,4.6,4.6h4.4v5.4c0,.8,0,1.4.4,1.9.3.2.6.3.8.3.4,0,.7-.2,1-.7l5.4-7h12.6c3.1,0,4.6-1.5,4.6-4.6v-15.5c0-2.6-1.3-3.9-3.9-3.9h0Z"/></svg>
+        Chat with AmitGPT
+      </a>
+    </div>
+
+    <footer>
+      &copy; <a href="https://awake.vc">AwakeVC</a> | Awakened Value Co-creation<br />
+      <a href="mailto:amit@awake.vc">amit@awake.vc</a>
+    </footer>
+  </section>
+
+</div>
+
+<script>
+(function() {
+  const sections = document.querySelectorAll('section');
+  const title = document.title;
+
+  function getHash() {
+    const h = location.hash ? location.hash.substring(1).toLowerCase() : 'home';
+    return h || 'home';
+  }
+
+  function activateSection(id) {
+    sections.forEach(section => {
+      const sectionId = section.id.replace('-section', '');
+      if (sectionId === id) {
+        section.classList.add('active');
+        section.style.display = '';
+      } else {
+        section.classList.remove('active');
+        section.style.display = 'none';
+      }
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function handleHashChange() {
+    activateSection(getHash());
+  }
+
+  window.addEventListener('DOMContentLoaded', handleHashChange);
+  window.addEventListener('hashchange', handleHashChange);
+
+  // Mobile viewport fix
+  function setVH() {
+    document.documentElement.style.setProperty('--viewport-height', window.innerHeight + 'px');
+  }
+  setVH();
+  window.addEventListener('resize', setVH);
+  window.addEventListener('orientationchange', () => setTimeout(setVH, 100));
+})();
+</script>
+</body>
+</html>

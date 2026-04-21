@@ -225,9 +225,58 @@
       height: 180px;
     }
 
-    /* Year entries */
-    .year-entry {
-      margin-bottom: 1rem;
+    /* Timeline entries */
+    .timeline {
+      margin-top: 1rem;
+    }
+    .timeline-entry {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .timeline-entry:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .timeline-year {
+      flex-shrink: 0;
+      width: 50px;
+      font-weight: 700;
+      color: var(--color-text);
+      font-size: 0.9rem;
+    }
+    .timeline-content {
+      flex: 1;
+    }
+    .timeline-title {
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.25rem;
+    }
+    .timeline-title a {
+      color: var(--color-text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-accent);
+    }
+    .timeline-title a:hover {
+      color: var(--color-accent);
+    }
+    .timeline-desc {
+      color: var(--color-text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .timeline-desc a {
+      color: var(--color-accent);
+    }
+    .section-intro {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 0.5rem;
     }
 
     /* Chat section */
@@ -491,12 +540,44 @@
       <!-- After Awake -->
       <div class="section-block">
         <h2>After Awake</h2>
-        <p>Connecting all dots, unleashing parallel entrepreneurship, designing for self-actualization:</p>
-        <p>2026, Intergraph: designing the core Multiplayer Knowledge Graph and the Mind of Agents Protocol, to bring Artificial Consciousness to the app layer.</p>
-        <p>2025, Coselling.ai: Selltype was absorbed by Coselling.</p>
-        <p>2025, Selltype: Real-time tracking, execution, and optimization engine for distributed revenue teams. Selltype is the unified operating system for human and AI agents working across marketing and sales orgs.</p>
-        <p>2020, Shoptype: commercialization of the Coseller Protocol, solving the <a href="https://awake.to/attribution-problem">retail attribution problem</a>, and inventing a new type of B2C Business Model called Community Commerce for transparent consumer retail.</p>
-        <p>2019, AwakeVC: designed my family office as Awakened Value Co-creation, a protocols-powered private-equity collective, managed by a proprietary Venture Ecosystem Operating System called a64z. Also designed the <a href="https://awake.to/NACs">NAC</a> for AI-powered FinTech-driven <a href="https://www.blitzscaling.com">blitzscaling</a> to apply <a href="https://awake.to/notes-programmatic-MnA">programmatic M&amp;A</a> growth strategies</p>
+        <p class="section-intro">Connecting all dots, unleashing parallel entrepreneurship, designing for self-actualization:</p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Intergraph</div>
+              <div class="timeline-desc">Designing the core Multiplayer Knowledge Graph and the Mind of Agents Protocol, to bring Artificial Consciousness to the app layer.</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Coselling.ai</div>
+              <div class="timeline-desc">Selltype was absorbed by Coselling.</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Selltype</div>
+              <div class="timeline-desc">Real-time tracking, execution, and optimization engine for distributed revenue teams. Selltype is the unified operating system for human and AI agents working across marketing and sales orgs.</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Shoptype</div>
+              <div class="timeline-desc">Commercialization of the Coseller Protocol, solving the <a href="https://awake.to/attribution-problem">retail attribution problem</a>, and inventing a new type of B2C Business Model called Community Commerce for transparent consumer retail.</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-content">
+              <div class="timeline-title">AwakeVC</div>
+              <div class="timeline-desc">Designed my family office as Awakened Value Co-creation, a protocols-powered private-equity collective, managed by a proprietary Venture Ecosystem Operating System called a64z. Also designed the <a href="https://awake.to/NACs">NAC</a> for AI-powered FinTech-driven <a href="https://www.blitzscaling.com">blitzscaling</a> to apply <a href="https://awake.to/notes-programmatic-MnA">programmatic M&amp;A</a> growth strategies.</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <hr />
@@ -504,26 +585,110 @@
       <!-- Publications -->
       <div class="section-block">
         <h2>Publications</h2>
-        <p>Learnings over the years:</p>
-        <p>2025 <a href="https://SwarmInfluence.com">Swarm Influence</a> - The Emergent Science of Collective Action: Harnessing AI, Avatars, and the Global Brain</p>
-        <p>2022, <a href="https://BeyondAllClouds.com">Beyond All Clouds:</a> live-blogging version of a book being written, the Story of Awake, of going from zero to one, and transforming industries</p>
-        <p>2018, <a href="https://www.amazon.com/Clojure-programming-practice-original-Chinese/dp/7111609387">Clojure in Action, in Chinese:</a> translated to Chinese for the mainland China launch of the book</p>
-        <p>2015, <a href="https://www.amazon.com/Clojure-Action-Amit-Rathore-ebook/dp/B09781HSH8">Clojure in Action, 2nd Edition:</a> updated and revised, along with a new co-author, Francis Avila</p>
-        <p>2011, <a href="https://www.amazon.com/Clojure-Action-Elegant-Applications-JVM/dp/1935182595">Clojure in Action:</a> among the earliest books on <a href="https://clojure.org">Clojure</a>, based on the first large-scale production system built in the extremely high-level programming language</p>
+        <p class="section-intro">Learnings over the years:</p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://SwarmInfluence.com">Swarm Influence</a></div>
+              <div class="timeline-desc">The Emergent Science of Collective Action: Harnessing AI, Avatars, and the Global Brain</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://BeyondAllClouds.com">Beyond All Clouds</a></div>
+              <div class="timeline-desc">Live-blogging version of a book being written, the Story of Awake, of going from zero to one, and transforming industries</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://www.amazon.com/Clojure-programming-practice-original-Chinese/dp/7111609387">Clojure in Action, in Chinese</a></div>
+              <div class="timeline-desc">Translated to Chinese for the mainland China launch of the book</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://www.amazon.com/Clojure-Action-Amit-Rathore-ebook/dp/B09781HSH8">Clojure in Action, 2nd Edition</a></div>
+              <div class="timeline-desc">Updated and revised, along with a new co-author, Francis Avila</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2011</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://www.amazon.com/Clojure-Action-Elegant-Applications-JVM/dp/1935182595">Clojure in Action</a></div>
+              <div class="timeline-desc">Among the earliest books on <a href="https://clojure.org">Clojure</a>, based on the first large-scale production system built in the extremely high-level programming language</div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <hr />
 
       <!-- Before Awake -->
       <div class="section-block">
         <h2>Before Awake</h2>
-        <p>In the space between dots, engaged in serial entrepreneurship, heading towards self-realization:</p>
-        <p>2017, PressCoin: a blockchain-powered Web3 multiverse for a new news-media ecosystem</p>
-        <p>2014, Quintype: a B2B software-as-a-service for all things digital media from content management, distribution, engagement, and monetization</p>
-        <p>2013, Staples: VP of Global e-Commerce, post acquisition of Runa, helping grow $30B revenue across online and offline, and B2B and B2C channels</p>
-        <p>2011, Higher Order: Machine-Learning and Artificial Intelligence Lab, incubating new ideas and ventures</p>
-        <p>2008, Runa: Revenue Ultimately Needs Algorithms, right? A large-scale ensemble AI system designed to increase e-commerce conversion rates by optimizing personalized pricing, automated merchandizing, package delivery estimation, cross-selling, upselling, and more.</p>
-        <p>2002, ThoughtWorks: traveled around the US for clients across trading systems, financial and banking systems, and a variety of other large-scale, mission-critical enterprise systems</p>
-        <p>2001, IBM: telecom management systems</p>
-        <p>1999, Philips Semiconductors: building simulators for new VLSI System-on-Chip designs</p>
+        <p class="section-intro">In the space between dots, engaged in serial entrepreneurship, heading towards self-realization:</p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-year">2017</div>
+            <div class="timeline-content">
+              <div class="timeline-title">PressCoin</div>
+              <div class="timeline-desc">A blockchain-powered Web3 multiverse for a new news-media ecosystem</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2014</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Quintype</div>
+              <div class="timeline-desc">A B2B software-as-a-service for all things digital media from content management, distribution, engagement, and monetization</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2013</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Staples</div>
+              <div class="timeline-desc">VP of Global e-Commerce, post acquisition of Runa, helping grow $30B revenue across online and offline, and B2B and B2C channels</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2011</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Higher Order</div>
+              <div class="timeline-desc">Machine-Learning and Artificial Intelligence Lab, incubating new ideas and ventures</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2008</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Runa</div>
+              <div class="timeline-desc">Revenue Ultimately Needs Algorithms, right? A large-scale ensemble AI system designed to increase e-commerce conversion rates by optimizing personalized pricing, automated merchandizing, package delivery estimation, cross-selling, upselling, and more.</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2002</div>
+            <div class="timeline-content">
+              <div class="timeline-title">ThoughtWorks</div>
+              <div class="timeline-desc">Traveled around the US for clients across trading systems, financial and banking systems, and a variety of other large-scale, mission-critical enterprise systems</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2001</div>
+            <div class="timeline-content">
+              <div class="timeline-title">IBM</div>
+              <div class="timeline-desc">Telecom management systems</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">1999</div>
+            <div class="timeline-content">
+              <div class="timeline-title">Philips Semiconductors</div>
+              <div class="timeline-desc">Building simulators for new VLSI System-on-Chip designs</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <hr />
@@ -531,14 +696,57 @@
       <!-- Patents -->
       <div class="section-block">
         <h2>Patents</h2>
-        <p>Innovations over the years:</p>
-        <p>2024: <a href="https://awake.to/authentic-media-patent">Identifying Provenence of Authentic Media</a></p>
-        <p>2021: <a href="https://patents.google.com/patent/WO2021248144A1/">Enabling influencer-driven commerce that tracks and attributes multiple influencer contributions and distributes available fees</a></p>
-        <p>2015: <a href="https://patents.google.com/patent/US20150032507A1">Automated targeting of information to an application visitor based on merchant business rules and analytics of benefits gained from automated targeting of information to the application visitor</a></p>
-        <p>2014: <a href="https://patents.google.com/patent/US20150066644A1">Automated targeting of information to an application user based on retargeting and utilizing email marketing</a></p>
-        <p>2014: <a href="https://patents.google.com/patent/US20150032532A1">Automated targeting of information influenced by geo-location to an application user using a mobile device</a></p>
-        <p>2014: <a href="https://patents.google.com/patent/US20150032540A1">Automated targeting of information influenced by delivery to a user</a></p>
-        <p>2010: <a href="https://patents.google.com/patent/US20110029382A1">Automated Targeting of Information to a Website Visitor</a></p>
+        <p class="section-intro">Innovations over the years:</p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://awake.to/authentic-media-patent">Identifying Provenance of Authentic Media</a></div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://patents.google.com/patent/WO2021248144A1/">Influencer-Driven Commerce Attribution</a></div>
+              <div class="timeline-desc">Enabling influencer-driven commerce that tracks and attributes multiple influencer contributions and distributes available fees</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://patents.google.com/patent/US20150032507A1">Merchant Business Rules Targeting</a></div>
+              <div class="timeline-desc">Automated targeting of information to an application visitor based on merchant business rules and analytics of benefits gained from automated targeting</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2014</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://patents.google.com/patent/US20150066644A1">Retargeting & Email Marketing</a></div>
+              <div class="timeline-desc">Automated targeting of information to an application user based on retargeting and utilizing email marketing</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2014</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://patents.google.com/patent/US20150032532A1">Geo-Location Targeting</a></div>
+              <div class="timeline-desc">Automated targeting of information influenced by geo-location to an application user using a mobile device</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2014</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://patents.google.com/patent/US20150032540A1">Delivery-Influenced Targeting</a></div>
+              <div class="timeline-desc">Automated targeting of information influenced by delivery to a user</div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2010</div>
+            <div class="timeline-content">
+              <div class="timeline-title"><a href="https://patents.google.com/patent/US20110029382A1">Website Visitor Targeting</a></div>
+              <div class="timeline-desc">Automated targeting of information to a website visitor</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <p style="text-align:center;margin-top:2rem;">

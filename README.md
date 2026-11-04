@@ -4,7 +4,7 @@ Static personal essay deployed by the existing GitHub Pages workflow on pushes t
 
 - `index.html`: essay, reference chronology, bibliography, patents, and Life’s 65 keywords. Life remains the final substantive section.
 - `assets/site.css`: responsive editorial design; `assets/site.js`: optional legacy-hash and disclosure navigation.
-- `assets/images/portrait.webp`: web derivative of the existing portrait. `personal-card-v2.png`: 1200 × 630 sharing card.
+- `assets/images/portrait.webp`: web derivative of the existing portrait. `personal-art-v3.jpg`: current 1200 × 630 sharing card, generated with imagegen. The original, prompt, and previous sharing card are retained.
 - `tests/life-keywords.json`: original keyword spelling and order. Keywords are currently plain list entries with stable IDs, ready for future content.
 
 ## Checks
@@ -28,3 +28,5 @@ Set `PLAYWRIGHT_MODULE` to an existing Playwright installation if it is not loca
 ## Legacy chat archive
 
 `/amitgpt.html` preserves the original Delphi embed for posterity. It is unlisted from the main site and marked `noindex, nofollow`; it is publicly reachable, not access-controlled. AmitAvatar is the current experience. The old `#amitgpt` hash on the homepage remains an alias to the AmitAvatar introduction.
+
+The favicon uses a code-native orbital mark (`assets/favicon-orbit-v3.svg`) with PNG, ICO, and Apple touch variants. `assets/personal-og-prompt.json` records the imagegen prompt.

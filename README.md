@@ -24,3 +24,7 @@ Set `PLAYWRIGHT_MODULE` to an existing Playwright installation if it is not loca
 - Authentic-media application US20240356906A1: published October 24, 2024; notice of allowance mailed June 2, 2026. No claim of an issued 2026 patent is made without an identified grant record.
 - Early employer dates and older patent/publication entries are retained from the previous personal site. They have not been silently normalized to the condensed AwakeVC biography.
 - Prior project copy is retained under “Earlier project notes,” separated from the current essay. The pre-existing removal of Shoptype Capital/Chat links is preserved.
+
+## Legacy chat archive
+
+`/amitgpt.html` preserves the original Delphi embed for posterity. It is unlisted from the main site and marked `noindex, nofollow`; it is publicly reachable, not access-controlled. AmitAvatar is the current experience. The old `#amitgpt` hash on the homepage remains an alias to the AmitAvatar introduction.
